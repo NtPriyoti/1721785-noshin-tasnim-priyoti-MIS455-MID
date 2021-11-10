@@ -9,15 +9,15 @@ const displaySalary = document.getElementById('display-salary');
 
 submitBtn.addEventListener('click', function(e){
 
-    if(ageField.value > 25){
+    if(ageField.value > 25 && salaryField.value >= 100000){
         displayName.innerText = `Name : ${userField.value}`
         displaySalary.innerText = `Bonus Salary : 20 %`
     }
-    if(ageField.value > 30){
+    if(ageField.value > 30 && salaryField.value >= 200000){
         displayName.innerText = `Name : ${userField.value}`
         displaySalary.innerText = `Bonus Salary : 30 %`
     }
-    if(ageField.value > 35){
+    if(ageField.value > 35 && salaryField.value >= 300000){
         displayName.innerText = `Name : ${userField.value}`
         displaySalary.innerText = `Bonus Salary : 40 %`
     }
